@@ -10,7 +10,7 @@
 #define __OpenGLCube__RenderSystem__
 
 #include <stdio.h>
-#include "/Users/mada360/Downloads/glfw-3.0.4/include/GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
 
 class RenderSystem{
 private:

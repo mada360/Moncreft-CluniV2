@@ -14,6 +14,7 @@
 		616217791A65B5550039B392 /* libglfw.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616217781A65B5550039B392 /* libglfw.3.0.dylib */; };
 		6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177A1A65BE690039B392 /* RenderSystem.cpp */; };
 		6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177D1A65CEC00039B392 /* VertexBuffer.cpp */; };
+		616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217801A65D1CF0039B392 /* ShaderLoader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		6162177B1A65BE690039B392 /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSystem.h; sourceTree = "<group>"; };
 		6162177D1A65CEC00039B392 /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
 		6162177E1A65CEC00039B392 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
+		616217801A65D1CF0039B392 /* ShaderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
+		616217811A65D1CF0039B392 /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLoader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				6162177B1A65BE690039B392 /* RenderSystem.h */,
 				6162177D1A65CEC00039B392 /* VertexBuffer.cpp */,
 				6162177E1A65CEC00039B392 /* VertexBuffer.h */,
+				616217801A65D1CF0039B392 /* ShaderLoader.cpp */,
+				616217811A65D1CF0039B392 /* ShaderLoader.h */,
 			);
 			path = OpenGLCube;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				616217771A65A0F50039B392 /* CubeManager.cpp in Sources */,
 				6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */,
 				6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */,
+				616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */,
 				6122427E1A656E0300FF27FD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +234,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/lib,
+					/usr/local/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,6 +275,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/lib,
+					/usr/local/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -283,7 +301,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/opt/local/lib/,
-					/usr/local/include/,
+					/usr/local/include,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -308,7 +326,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/opt/local/lib/,
-					/usr/local/include/,
+					/usr/local/include,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
