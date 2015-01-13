@@ -13,6 +13,7 @@
 		616217771A65A0F50039B392 /* CubeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217751A65A0F50039B392 /* CubeManager.cpp */; };
 		616217791A65B5550039B392 /* libglfw.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616217781A65B5550039B392 /* libglfw.3.0.dylib */; };
 		6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177A1A65BE690039B392 /* RenderSystem.cpp */; };
+		6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177D1A65CEC00039B392 /* VertexBuffer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		616217781A65B5550039B392 /* libglfw.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.0.dylib; path = ../../../../usr/local/lib/libglfw.3.0.dylib; sourceTree = "<group>"; };
 		6162177A1A65BE690039B392 /* RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderSystem.cpp; sourceTree = "<group>"; };
 		6162177B1A65BE690039B392 /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSystem.h; sourceTree = "<group>"; };
+		6162177D1A65CEC00039B392 /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		6162177E1A65CEC00039B392 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				616217761A65A0F50039B392 /* CubeManager.h */,
 				6162177A1A65BE690039B392 /* RenderSystem.cpp */,
 				6162177B1A65BE690039B392 /* RenderSystem.h */,
+				6162177D1A65CEC00039B392 /* VertexBuffer.cpp */,
+				6162177E1A65CEC00039B392 /* VertexBuffer.h */,
 			);
 			path = OpenGLCube;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				616217771A65A0F50039B392 /* CubeManager.cpp in Sources */,
+				6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */,
 				6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */,
 				6122427E1A656E0300FF27FD /* main.cpp in Sources */,
 			);
