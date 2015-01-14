@@ -16,17 +16,21 @@
 		6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177D1A65CEC00039B392 /* VertexBuffer.cpp */; };
 		616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217801A65D1CF0039B392 /* ShaderLoader.cpp */; };
 		616217881A65DE850039B392 /* ShaderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217861A65DE850039B392 /* ShaderInterface.cpp */; };
+		6185D54E1A6673E900E5C08D /* colorShader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 616217831A65D7A70039B392 /* colorShader.vs */; };
+		6185D54F1A6673E900E5C08D /* colorShader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 616217851A65D7E60039B392 /* colorShader.fs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		612242781A656E0300FF27FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 16;
 			files = (
+				6185D54E1A6673E900E5C08D /* colorShader.vs in CopyFiles */,
+				6185D54F1A6673E900E5C08D /* colorShader.fs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -310,7 +314,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
-					/opt/local/lib/,
 					/usr/local/include,
 				);
 				OTHER_CPLUSPLUSFLAGS = (
@@ -335,7 +338,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
-					/opt/local/lib/,
 					/usr/local/include,
 				);
 				OTHER_CPLUSPLUSFLAGS = (

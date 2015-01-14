@@ -15,11 +15,15 @@
 
 class CubeManager{
     
+private:
+    
     bool _running;
     RenderSystem *_renderSystem;
     GLFWwindow *_window;
     
-private:
+    VertexBuffer *vertexBuffer;
+
+    
     CubeManager(bool running);
     ~CubeManager();
     

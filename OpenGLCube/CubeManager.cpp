@@ -9,9 +9,14 @@
 #include "CubeManager.h"
 #include <iostream>
 
+GLfloat vertices[]= {
+    -0.5f, -0.5f, 0.0f,
+     0.5f, -0.5f, 0.0f,
+     0.0f,  0.5f, 0.0f
+};
 
 CubeManager::CubeManager(bool running): _running(running), _window(glfwGetCurrentContext()), _renderSystem(&RenderSystem::getRenderSystem()){
-    
+    vertexBuffer = new VertexBuffer(vertices, sizeof(vertices), GL_TRIANGLES, 3, sizeof(GLfloat)*3);
 }
 
 CubeManager::~CubeManager(){
@@ -24,9 +29,7 @@ void CubeManager::runGameLoop(){
         //When game not running, set running to false.
         _running = !glfwWindowShouldClose(_window);
         
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        
-        _renderSystem->render();
+        _renderSystem->render(vertexBuffer);
         
   
     }
@@ -45,7 +48,7 @@ CubeManager& CubeManager::getCubeManager(){
         glfwWindowHint(GLFW_GREEN_BITS,  8);
         glfwWindowHint(GLFW_ALPHA_BITS,  8);
         
-        GLFWwindow *window = glfwCreateWindow(800, 600, "OpenGL Cube", NULL, NULL);
+        GLFWwindow *window = glfwCreateWindow(1280, 720, "OpenGL Cube", NULL, NULL);
         glfwMakeContextCurrent(window);
         
         cubeManager = new CubeManager(true);

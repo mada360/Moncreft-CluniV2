@@ -10,19 +10,25 @@
 #define __OpenGLCube__RenderSystem__
 
 #include <stdio.h>
+#define GLFW_INCLUDE_GLU
 #include <GLFW/glfw3.h>
+#include "VertexBuffer.h"
+#include <vector>
+#include "ShaderInterface.h"
 
 class RenderSystem{
 private:
     
     GLFWwindow *_window;
     
+    std::vector<ShaderInterface *> *shaderArray;
+    
     RenderSystem();
     ~RenderSystem();
     
 public:
     
-    void render();
+    void render(VertexBuffer *vertexBuffer);
     
     static RenderSystem& getRenderSystem();
     static void destroyRenderSystem();
