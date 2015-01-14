@@ -15,6 +15,7 @@
 		6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177A1A65BE690039B392 /* RenderSystem.cpp */; };
 		6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6162177D1A65CEC00039B392 /* VertexBuffer.cpp */; };
 		616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217801A65D1CF0039B392 /* ShaderLoader.cpp */; };
+		616217881A65DE850039B392 /* ShaderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217861A65DE850039B392 /* ShaderInterface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,10 @@
 		6162177E1A65CEC00039B392 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
 		616217801A65D1CF0039B392 /* ShaderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
 		616217811A65D1CF0039B392 /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLoader.h; sourceTree = "<group>"; };
+		616217831A65D7A70039B392 /* colorShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = colorShader.vs; sourceTree = "<group>"; };
+		616217851A65D7E60039B392 /* colorShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = colorShader.fs; path = ../colorShader.fs; sourceTree = "<group>"; };
+		616217861A65DE850039B392 /* ShaderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderInterface.cpp; sourceTree = "<group>"; };
+		616217871A65DE850039B392 /* ShaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,10 @@
 				6162177E1A65CEC00039B392 /* VertexBuffer.h */,
 				616217801A65D1CF0039B392 /* ShaderLoader.cpp */,
 				616217811A65D1CF0039B392 /* ShaderLoader.h */,
+				616217831A65D7A70039B392 /* colorShader.vs */,
+				616217851A65D7E60039B392 /* colorShader.fs */,
+				616217861A65DE850039B392 /* ShaderInterface.cpp */,
+				616217871A65DE850039B392 /* ShaderInterface.h */,
 			);
 			path = OpenGLCube;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 			files = (
 				616217771A65A0F50039B392 /* CubeManager.cpp in Sources */,
 				6162177F1A65CEC00039B392 /* VertexBuffer.cpp in Sources */,
+				616217881A65DE850039B392 /* ShaderInterface.cpp in Sources */,
 				6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */,
 				616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */,
 				6122427E1A656E0300FF27FD /* main.cpp in Sources */,
