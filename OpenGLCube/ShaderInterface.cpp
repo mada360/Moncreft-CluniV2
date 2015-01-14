@@ -18,7 +18,7 @@ GLint  ShaderInterface::get_uColor(){
     return _uColor;
 }
 
-ShaderInterface::ShaderInterface(char *VS, char *FS){
+ShaderInterface::ShaderInterface(const char *VS,const char *FS){
     shader = new ShaderLoader(VS,FS);
     
     _aPositionVertex = glGetAttribLocation(shader->getProgramHandle(), "aPositionVertex");
