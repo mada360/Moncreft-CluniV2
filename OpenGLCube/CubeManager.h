@@ -9,29 +9,39 @@
 #ifndef __OpenGLCube__CubeManager__
 #define __OpenGLCube__CubeManager__
 
-#include <stdio.h>
+#include <iostream>
 #include <GLFW/glfw3.h>
 #include "RenderSystem.h"
+#include "ResourceManager.h"
+#include "MovementSystem.h"
+#include "CameraSystem.h"
+#include "PlayerInputSystem.h"
+#include "Entity.h"
+#include "Scene.h"
 
 class CubeManager{
-    
 private:
     
     bool _running;
     RenderSystem *_renderSystem;
+    ResourceManager *_resourceManager;
+    MovementSystem *_movementSystem;
+    CameraSystem *_cameraSystem;
+    PlayerInputSystem *_playerInputSystem;
     GLFWwindow *_window;
     
-    VertexBuffer *vertexBuffer;
-
+    Scene *scene;
     
     CubeManager(bool running);
     ~CubeManager();
     
 public:
-    void runGameLoop();
+    
+    void runCubeLoop();
     
     static CubeManager& getCubeManager();
     static void destroyCubeManager();
+    
 };
 
 

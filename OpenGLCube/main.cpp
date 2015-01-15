@@ -1,8 +1,8 @@
-#include "/Users/mada360/Downloads/glfw-3.0.4/include/GLFW/glfw3.h"
-#include "CubeManager.h"
+#include "GameManager.h"
+
 int main(int argc, char **argv)
 {
-    CubeManager *cubeManager = &CubeManager::getCubeManager();
-    cubeManager->runGameLoop();
-    CubeManager::destroyCubeManager();
+    GameManager *gameManager = &GameManager::getGameManager();
+    gameManager->runGameLoop();
+    GameManager::destroyGameManager();
 }

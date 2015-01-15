@@ -1,36 +1,52 @@
 //
 //  VertexBuffer.h
-//  OpenGLCube
+//  SimpleFPS
 //
-//  Created by Adam Worley on 13/01/2015.
-//  Copyright (c) 2015 Adam Worley. All rights reserved.
+//  Created by Dimitriy Dounaev on 12/09/13.
+//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
 //
 
-#ifndef __OpenGLCube__VertexBuffer__
-#define __OpenGLCube__VertexBuffer__
+#ifndef __SimpleFPS__VertexBuffer__
+#define __SimpleFPS__VertexBuffer__
 
-#include <stdio.h>
+#include <iostream>
 #include <GLFW/glfw3.h>
+#include "ShaderInterface.h"
+#include "ShaderData.h"
 
-class VertexBuffer{
-    
+class VertexBuffer
+{
 private:
+    
     GLuint _vertexBufferID;
+    ShaderInterface *_shader;
+    ShaderData *_shaderData;
     
     GLenum _mode;
     GLsizei _count;
     GLsizei _stride;
+    GLvoid *_positionOffset;
+    GLvoid *_normalOffset;
     
 public:
     
     GLuint getVertexBufferID();
+    ShaderInterface *getShader();
+    ShaderData *getShaderData();
     
-    VertexBuffer(const GLvoid *data, GLsizeiptr size, GLenum mode, GLsizei count, GLsizei stride);
+    VertexBuffer(const GLvoid *data,
+                 GLsizeiptr size,
+                 GLenum mode,
+                 GLsizei count,
+                 GLsizei stride,
+                 ShaderInterface *shader,
+                 ShaderData *shaderData,
+                 GLvoid *positionOffset,
+                 GLvoid *normalOffset);
     ~VertexBuffer();
     
-    void configureVertexAttributes(GLint vertexPosition);
+    void configureVertexAttributes();
     void renderVertexBuffer();
-    
 };
 
-#endif /* defined(__OpenGLCube__VertexBuffer__) */
+#endif /* defined(__SimpleFPS__VertexBuffer__) */

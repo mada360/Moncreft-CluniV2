@@ -1,37 +1,45 @@
 //
 //  RenderSystem.h
-//  OpenGLCube
+//  SimpleFPS
 //
-//  Created by Adam Worley on 13/01/2015.
-//  Copyright (c) 2015 Adam Worley. All rights reserved.
+//  Created by Dimitriy Dounaev on 8/09/13.
+//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
 //
 
-#ifndef __OpenGLCube__RenderSystem__
-#define __OpenGLCube__RenderSystem__
+#ifndef __SimpleFPS__RenderSystem__
+#define __SimpleFPS__RenderSystem__
 
-#include <stdio.h>
+#include <iostream>
 #define GLFW_INCLUDE_GLU
 #include <GLFW/glfw3.h>
 #include "VertexBuffer.h"
 #include <vector>
 #include "ShaderInterface.h"
+#include "Entity.h"
+#include "CameraSystem.h"
 
-class RenderSystem{
+class RenderSystem
+{
 private:
     
     GLFWwindow *_window;
     
-    std::vector<ShaderInterface *> *shaderArray;
+    CameraSystem *_cameraSystem;
+    Entity *_currentCamera;
     
     RenderSystem();
     ~RenderSystem();
     
 public:
     
-    void render(VertexBuffer *vertexBuffer);
+    Entity *getCurrentCamera();
+    void setCurrentCamera(Entity *newCamera);
+    
+    void render(std::vector<Entity *> *entityArray);
     
     static RenderSystem& getRenderSystem();
     static void destroyRenderSystem();
+    
 };
 
-#endif /* defined(__OpenGLCube__RenderSystem__) */
+#endif /* defined(__SimpleFPS__RenderSystem__) */
