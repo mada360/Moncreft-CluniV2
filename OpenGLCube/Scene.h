@@ -1,20 +1,19 @@
 //
 //  Scene.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 19/11/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__Scene__
-#define __SimpleFPS__Scene__
+#ifndef __OpenGLCube__Scene__
+#define __OpenGLCube__Scene__
 
 #include <iostream>
 #include "Entity.h"
 #include <vector>
 
-class Scene
-{
+class Scene{
 private:
     
     std::vector<Entity *> *_children;
@@ -28,4 +27,4 @@ public:
     
 };
 
-#endif /* defined(__SimpleFPS__Scene__) */
+#endif /* defined(__OpenGLCube__Scene__) */

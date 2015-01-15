@@ -1,19 +1,18 @@
 //
 //  CameraSystem.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 10/11/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__CameraSystem__
-#define __SimpleFPS__CameraSystem__
+#ifndef __OpenGLCube__CameraSystem__
+#define __OpenGLCube__CameraSystem__
 
 #include <iostream>
 #include "Entity.h"
 
-class CameraSystem
-{
+class CameraSystem {
 private:
     
     Entity *_currentCamera;
@@ -31,4 +30,4 @@ public:
 };
 
 
-#endif /* defined(__SimpleFPS__CameraSystem__) */
+#endif /* defined(__OpenGLCube__CameraSystem__) */

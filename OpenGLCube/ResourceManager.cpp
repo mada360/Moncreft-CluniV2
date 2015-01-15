@@ -1,27 +1,24 @@
 //
 //  ResourceManager.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 30/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
 #include "ResourceManager.h"
-#include "TraingleVertices.h"
+#include "TriangleVertices.h"
 #include "CubeVertices.h"
 
-std::vector<ShaderInterface *>* ResourceManager::getShaderArray()
-{
+std::vector<ShaderInterface *>* ResourceManager::getShaderArray(){
     return _shaderArray;
 }
 
-std::vector<VertexBuffer *>* ResourceManager::getVertexBufferArray()
-{
+std::vector<VertexBuffer *>* ResourceManager::getVertexBufferArray(){
     return _vertexBufferArray;
 }
 
-ResourceManager::ResourceManager()
-{
+ResourceManager::ResourceManager(){
     _shaderArray = new std::vector<ShaderInterface *>();
     ShaderInterface *shader = new ShaderInterface("ColorShader.vsh", "ColorShader.fsh");
     _shaderArray->push_back(shader);
@@ -42,19 +39,18 @@ ResourceManager::ResourceManager()
                                                   NULL);
     _vertexBufferArray->push_back(vertexBuffer);
     VertexBuffer *cubeVertexBuffer = new VertexBuffer(cubeVertices,
-                                                  sizeof(cubeVertices),
-                                                  GL_TRIANGLES,
-                                                  36,
-                                                  sizeof(VertexDataPN),
-                                                  _shaderArray->at(1),
-                                                shaderData,
-                                                  (GLvoid *)(offsetof(VertexDataPN, positionCoordinates)),
-                                                  (GLvoid *)(offsetof(VertexDataPN, normalCoordinates)));
+                                                      sizeof(cubeVertices),
+                                                      GL_TRIANGLES,
+                                                      36,
+                                                      sizeof(VertexDataPN),
+                                                      _shaderArray->at(1),
+                                                      shaderData,
+                                                      (GLvoid *)(offsetof(VertexDataPN, positionCoordinates)),
+                                                      (GLvoid *)(offsetof(VertexDataPN, normalCoordinates)));
     _vertexBufferArray->push_back(cubeVertexBuffer);
 }
 
-ResourceManager::~ResourceManager()
-{
+ResourceManager::~ResourceManager(){
     
     for (std::vector<ShaderInterface *>::iterator iterator = _shaderArray->begin();
          iterator != _shaderArray->end();
@@ -74,8 +70,7 @@ ResourceManager::~ResourceManager()
     delete _vertexBufferArray;
 }
 
-ResourceManager& ResourceManager::getResourceManager()
-{
+ResourceManager& ResourceManager::getResourceManager(){
     static ResourceManager *resourceManager = NULL;
     
     if (resourceManager == NULL) {
@@ -85,8 +80,7 @@ ResourceManager& ResourceManager::getResourceManager()
     return *resourceManager;
 }
 
-void ResourceManager::destroyResourceManager()
-{
+void ResourceManager::destroyResourceManager(){
     ResourceManager *resourceManager = &getResourceManager();
     delete resourceManager;
 }

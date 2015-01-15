@@ -9,8 +9,6 @@
 #ifndef __OpenGLCube__Vector3__
 #define __OpenGLCube__Vector3__
 
-#include <stdio.h>
-
 #include <iostream>
 #include <GLFW/glfw3.h>
 #include "Matrix3.h"
@@ -31,6 +29,5 @@ Vector3 scalerMultiplyVector3(Vector3 vectorToMultiply, GLfloat scalerValue);
 Vector3 crossProductVector3(Vector3 vectorA, Vector3 vectorB);
 GLfloat dotProductVector3(Vector3 vectorA, Vector3 vectorB);
 Vector3 transformVector3(Vector3 vector, Matrix3 transformationMatrix);
-
 
 #endif /* defined(__OpenGLCube__Vector3__) */

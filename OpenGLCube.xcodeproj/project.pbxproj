@@ -65,7 +65,7 @@
 		616217801A65D1CF0039B392 /* ShaderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderLoader.cpp; path = OpenGLCube/ShaderLoader.cpp; sourceTree = "<group>"; };
 		616217811A65D1CF0039B392 /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderLoader.h; path = OpenGLCube/ShaderLoader.h; sourceTree = "<group>"; };
 		616217831A65D7A70039B392 /* ColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ColorShader.vsh; path = OpenGLCube/ColorShader.vsh; sourceTree = "<group>"; };
-		616217851A65D7E60039B392 /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.fsh; sourceTree = "<group>"; };
+		616217851A65D7E60039B392 /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ColorShader.fsh; path = OpenGLCube/ColorShader.fsh; sourceTree = "<group>"; };
 		616217861A65DE850039B392 /* ShaderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderInterface.cpp; path = OpenGLCube/ShaderInterface.cpp; sourceTree = "<group>"; };
 		616217871A65DE850039B392 /* ShaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderInterface.h; path = OpenGLCube/ShaderInterface.h; sourceTree = "<group>"; };
 		61F06F1F1A6734BB00609B34 /* PlayerInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputSystem.cpp; sourceTree = "<group>"; };
@@ -82,19 +82,19 @@
 		61F06F2F1A6737A100609B34 /* MovementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementSystem.h; sourceTree = "<group>"; };
 		61F06F311A67381000609B34 /* Matrix3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3.cpp; sourceTree = "<group>"; };
 		61F06F321A67381000609B34 /* Matrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3.h; sourceTree = "<group>"; };
-		61F06F351A6738C500609B34 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
-		61F06F361A6738C500609B34 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
-		61F06F391A67392300609B34 /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector4.cpp; sourceTree = "<group>"; };
-		61F06F3A1A67392300609B34 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
-		61F06F3E1A6739C300609B34 /* VertexData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexData.h; sourceTree = "<group>"; };
-		61F06F401A673A2400609B34 /* ShaderData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderData.cpp; sourceTree = "<group>"; };
-		61F06F411A673A2400609B34 /* ShaderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderData.h; sourceTree = "<group>"; };
-		61F06F471A673ACB00609B34 /* SimpleLightShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.vsh; sourceTree = "<group>"; };
-		61F06F481A673AF800609B34 /* SimpleLightShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.fsh; sourceTree = "<group>"; };
-		61F06F4A1A673BA300609B34 /* CubeVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeVertices.h; sourceTree = "<group>"; };
-		61F06F4B1A673BC800609B34 /* TriangleVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleVertices.h; sourceTree = "<group>"; };
-		61F06F4C1A673C2700609B34 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2.cpp; path = ../Vector2.cpp; sourceTree = "<group>"; };
-		61F06F4D1A673C2700609B34 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ../Vector2.h; sourceTree = "<group>"; };
+		61F06F351A6738C500609B34 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3.cpp; path = OpenGLCube/Vector3.cpp; sourceTree = "<group>"; };
+		61F06F361A6738C500609B34 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = OpenGLCube/Vector3.h; sourceTree = "<group>"; };
+		61F06F391A67392300609B34 /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector4.cpp; path = OpenGLCube/Vector4.cpp; sourceTree = "<group>"; };
+		61F06F3A1A67392300609B34 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector4.h; path = OpenGLCube/Vector4.h; sourceTree = "<group>"; };
+		61F06F3E1A6739C300609B34 /* VertexData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexData.h; path = OpenGLCube/VertexData.h; sourceTree = "<group>"; };
+		61F06F401A673A2400609B34 /* ShaderData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderData.cpp; path = OpenGLCube/ShaderData.cpp; sourceTree = "<group>"; };
+		61F06F411A673A2400609B34 /* ShaderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderData.h; path = OpenGLCube/ShaderData.h; sourceTree = "<group>"; };
+		61F06F471A673ACB00609B34 /* SimpleLightShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleLightShader.vsh; path = OpenGLCube/SimpleLightShader.vsh; sourceTree = "<group>"; };
+		61F06F481A673AF800609B34 /* SimpleLightShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SimpleLightShader.fsh; path = OpenGLCube/SimpleLightShader.fsh; sourceTree = "<group>"; };
+		61F06F4A1A673BA300609B34 /* CubeVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CubeVertices.h; path = OpenGLCube/CubeVertices.h; sourceTree = "<group>"; };
+		61F06F4B1A673BC800609B34 /* TriangleVertices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TriangleVertices.h; path = OpenGLCube/TriangleVertices.h; sourceTree = "<group>"; };
+		61F06F4C1A673C2700609B34 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		61F06F4D1A673C2700609B34 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,6 @@
 		612242711A656E0300FF27FD = {
 			isa = PBXGroup;
 			children = (
-				61225F321A67663200C711D2 /* SimpleFPS.1 */,
 				61F06F491A673B5F00609B34 /* Resources */,
 				61F06F431A673A8100609B34 /* SimpleLightShader */,
 				61F06F3C1A67397B00609B34 /* DataModelMesh */,
@@ -137,15 +136,16 @@
 		6122427C1A656E0300FF27FD /* OpenGLCube */ = {
 			isa = PBXGroup;
 			children = (
+				61225F321A67663200C711D2 /* SimpleFPS.1 */,
 				6122427D1A656E0300FF27FD /* main.cpp */,
 				616217751A65A0F50039B392 /* GameManager.cpp */,
 				616217761A65A0F50039B392 /* GameManager.h */,
 				61F06F1F1A6734BB00609B34 /* PlayerInputSystem.cpp */,
 				61F06F201A6734BB00609B34 /* PlayerInputSystem.h */,
 				61F06F221A67355300609B34 /* Scene.cpp */,
+				61F06F231A67355300609B34 /* Scene.h */,
 				61F06F251A6735C100609B34 /* CameraSystem.cpp */,
 				61F06F261A6735C100609B34 /* CameraSystem.h */,
-				61F06F231A67355300609B34 /* Scene.h */,
 				6162177A1A65BE690039B392 /* RenderSystem.cpp */,
 				6162177B1A65BE690039B392 /* RenderSystem.h */,
 				61F06F281A6736D300609B34 /* ResourceManager.cpp */,

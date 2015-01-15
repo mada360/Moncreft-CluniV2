@@ -1,21 +1,20 @@
 //
 //  Entity.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 11/10/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__Entity__
-#define __SimpleFPS__Entity__
+#ifndef __OpenGLCube__Entity__
+#define __OpenGLCube__Entity__
 
 #include <iostream>
 #include "VertexBuffer.h"
 #include "Vector3.h"
 #include <vector>
 
-class Entity
-{
+class Entity{
 private:
     
     VertexBuffer *_vertexBuffer;
@@ -59,7 +58,7 @@ public:
     
     Vector3 getUpVector();
     void setUpVector(Vector3 newUpVector);
-
+    
     Entity(VertexBuffer *vertexBuffer, Vector3 position);
     ~Entity();
 };

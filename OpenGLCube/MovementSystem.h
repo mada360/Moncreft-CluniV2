@@ -1,13 +1,13 @@
 //
 //  MovementSystem.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 18/10/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__MovementSystem__
-#define __SimpleFPS__MovementSystem__
+#ifndef __OpenGLCube__MovementSystem__
+#define __OpenGLCube__MovementSystem__
 
 #include <iostream>
 #include "Vector3.h"
@@ -30,4 +30,4 @@ public:
 };
 
 
-#endif /* defined(__SimpleFPS__MovementSystem__) */
+#endif /* defined(__OpenGLCube__MovementSystem__) */

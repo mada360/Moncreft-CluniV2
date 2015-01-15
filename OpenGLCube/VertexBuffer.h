@@ -1,13 +1,15 @@
 //
 //  VertexBuffer.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 12/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
+// Followed Tutorial made by Dimitriy Dounaev, youtube channel - https://www.youtube.com/channel/UCaFy_GmZA02jbHGfc3zUuPw
 
-#ifndef __SimpleFPS__VertexBuffer__
-#define __SimpleFPS__VertexBuffer__
+
+#ifndef __OpenGLCube__VertexBuffer__
+#define __OpenGLCube__VertexBuffer__
 
 #include <iostream>
 #include <GLFW/glfw3.h>
@@ -49,4 +51,4 @@ public:
     void renderVertexBuffer();
 };
 
-#endif /* defined(__SimpleFPS__VertexBuffer__) */
+#endif /* defined(__OpenGLCube__VertexBuffer__) */

@@ -1,39 +1,20 @@
 //
 //  ShaderLoader.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 13/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
+// Followed Tutorial made by Dimitriy Dounaev, youtube channel - https://www.youtube.com/channel/UCaFy_GmZA02jbHGfc3zUuPw
+
 
 #include "ShaderLoader.h"
 
-/*void printShaderInfoLog(GLuint obj)
-{
-    int infologLength = 0;
-    int charsWritten  = 0;
-    char *infoLog;
-    
-    glGetShaderiv(obj, GL_INFO_LOG_LENGTH,&infologLength);
-    
-    if (infologLength > 0)
-    {
-        infoLog = (char *)malloc(infologLength);
-        glGetShaderInfoLog(obj, infologLength, &charsWritten, infoLog);
-        printf("%s\n",infoLog);
-        free(infoLog);
-    }
-}*/
-
-//didn't make that yet ep09
-
-GLuint ShaderLoader::getProgramHandle()
-{
+GLuint ShaderLoader::getProgramHandle(){
     return _programHandle;
 }
 
-GLuint ShaderLoader::compileShader(GLenum shader, const char *source)
-{
+GLuint ShaderLoader::compileShader(GLenum shader, const char *source){
     GLuint shaderHandle = glCreateShader(shader);
     glShaderSource(shaderHandle, 1, &source, NULL);
     glCompileShader(shaderHandle);
@@ -43,8 +24,7 @@ GLuint ShaderLoader::compileShader(GLenum shader, const char *source)
     return shaderHandle;
 }
 
-ShaderLoader::ShaderLoader(const char *sourceVS, const char *sourceFS)
-{
+ShaderLoader::ShaderLoader(const char *sourceVS, const char *sourceFS){
     _programHandle = glCreateProgram();
     
     GLuint vertexShader = compileShader(GL_VERTEX_SHADER, sourceVS);
@@ -59,7 +39,6 @@ ShaderLoader::ShaderLoader(const char *sourceVS, const char *sourceFS)
     glDeleteShader(fragmentShader);
 }
 
-ShaderLoader::~ShaderLoader()
-{
+ShaderLoader::~ShaderLoader(){
     glDeleteProgram(_programHandle);
 }

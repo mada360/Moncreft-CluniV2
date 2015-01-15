@@ -1,13 +1,13 @@
 //
 //  ResourceManager.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 30/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__ResourceManager__
-#define __SimpleFPS__ResourceManager__
+#ifndef __OpenGLCube__ResourceManager__
+#define __OpenGLCube__ResourceManager__
 
 #include <iostream>
 #include <vector>
@@ -15,8 +15,7 @@
 #include "VertexBuffer.h"
 #include "ShaderData.h"
 
-class ResourceManager
-{
+class ResourceManager{
 private:
     
     std::vector<ShaderInterface *> *_shaderArray;
@@ -37,4 +36,4 @@ public:
     
 };
 
-#endif /* defined(__SimpleFPS__ResourceManager__) */
+#endif /* defined(__OpenGLCube__ResourceManager__) */

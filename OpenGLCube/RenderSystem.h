@@ -1,13 +1,13 @@
 //
 //  RenderSystem.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 8/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__RenderSystem__
-#define __SimpleFPS__RenderSystem__
+#ifndef __OpenGLCube__RenderSystem__
+#define __OpenGLCube__RenderSystem__
 
 #include <iostream>
 #define GLFW_INCLUDE_GLU
@@ -18,8 +18,7 @@
 #include "Entity.h"
 #include "CameraSystem.h"
 
-class RenderSystem
-{
+class RenderSystem{
 private:
     
     GLFWwindow *_window;
@@ -42,4 +41,4 @@ public:
     
 };
 
-#endif /* defined(__SimpleFPS__RenderSystem__) */
+#endif /* defined(__OpenGLCube__RenderSystem__) */

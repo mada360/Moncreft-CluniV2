@@ -1,9 +1,9 @@
 //
 //  Scene.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 19/11/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
 #include "Scene.h"
@@ -11,18 +11,16 @@
 #include "ResourceManager.h"
 #include "PlayerInputSystem.h"
 
-std::vector<Entity *>* Scene::getChildren()
-{
+std::vector<Entity *>* Scene::getChildren(){
     return _children;
 }
 
-Scene::Scene()
-{
+Scene::Scene(){
     _children = new std::vector<Entity *>();
     
     ResourceManager *resourceManager = &ResourceManager::getResourceManager();
     Entity *entity =new Entity(resourceManager->getVertexBufferArray()->at(1),
-                       makeVector3(0.0f, 0.0f, 5.0f));
+                               makeVector3(0.0f, 0.0f, 5.0f));
     
     _children->push_back(entity);
     
@@ -38,8 +36,7 @@ Scene::Scene()
     cameraSystem->setCurrentCamera(camera);
 }
 
-Scene::~Scene()
-{
+Scene::~Scene(){
     for (std::vector<Entity *>::iterator iterator = _children->begin(); iterator != _children->end(); iterator++) {
         delete *iterator;
     }

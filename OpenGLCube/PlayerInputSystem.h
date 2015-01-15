@@ -1,21 +1,20 @@
 //
 //  PlayerInputSystem.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 26/11/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__PlayerInputSystem__
-#define __SimpleFPS__PlayerInputSystem__
+#ifndef __OpenGLCube__PlayerInputSystem__
+#define __OpenGLCube__PlayerInputSystem__
 
 #include <iostream>
 #include  <GLFW/glfw3.h>
 #include "Entity.h"
 #include "Vector2.h"
 
-class PlayerInputSystem
-{
+class PlayerInputSystem{
 private:
     
     Vector2 _lastMousePosition;
@@ -43,4 +42,4 @@ public:
     static void keyCallbackFun(GLFWwindow *window, int key, int scancode, int action, int mods);
 };
 
-#endif /* defined(__SimpleFPS__PlayerInputSystem__) */
+#endif /* defined(__OpenGLCube__PlayerInputSystem__) */

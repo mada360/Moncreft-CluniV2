@@ -1,19 +1,21 @@
 //
 //  ShaderInterface.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 22/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
+// Followed Tutorial made by Dimitriy Dounaev, youtube channel - https://www.youtube.com/channel/UCaFy_GmZA02jbHGfc3zUuPw
+
 
 #ifndef __SimpleFPS__ShaderInterface__
 #define __SimpleFPS__ShaderInterface__
 
 #include <iostream>
 #include "ShaderLoader.h"
+#include <fstream>
 
-class ShaderInterface
-{
+class ShaderInterface{
 private:
     
     ShaderLoader *shader;
@@ -38,7 +40,7 @@ public:
     
     ShaderInterface(const char *VS, const char *FS);
     ~ShaderInterface();
-
+    
 };
 
 #endif /* defined(__SimpleFPS__ShaderInterface__) */

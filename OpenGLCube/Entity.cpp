@@ -1,100 +1,82 @@
 //
 //  Entity.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 11/10/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
 #include "Entity.h"
 
-VertexBuffer *Entity::getVertexBuffer()
-{
+VertexBuffer *Entity::getVertexBuffer(){
     return _vertexBuffer;
 }
 
-void Entity::setVertexBuffer(VertexBuffer *newVertexBuffer)
-{
+void Entity::setVertexBuffer(VertexBuffer *newVertexBuffer){
     _vertexBuffer = newVertexBuffer;
 }
 
-Vector3 Entity::getPosition()
-{
+Vector3 Entity::getPosition(){
     return _position;
 }
 
-void Entity::setPosition(Vector3 newPosition)
-{
+void Entity::setPosition(Vector3 newPosition){
     _position = newPosition;
 }
 
-Vector3 Entity::getScale()
-{
+Vector3 Entity::getScale(){
     return _scale;
 }
 
-void Entity::setScale(Vector3 newScale)
-{
+void Entity::setScale(Vector3 newScale){
     _scale = newScale;
 }
 
-Vector3 Entity::getRotation()
-{
+Vector3 Entity::getRotation(){
     return _rotation;
 }
 
-void Entity::setRotation(Vector3 newRotation)
-{
+void Entity::setRotation(Vector3 newRotation){
     _rotation = newRotation;
 }
 
-Vector3 Entity::getVelocity()
-{
+Vector3 Entity::getVelocity(){
     return _velocity;
 }
 
-void Entity::setVelocity(Vector3 newVelocity)
-{
+void Entity::setVelocity(Vector3 newVelocity){
     _velocity = newVelocity;
 }
 
-Vector3 Entity::getScaleVelocity()
-{
+Vector3 Entity::getScaleVelocity(){
     return _scaleVelocity;
 }
 
-void Entity::setScaleVelocity(Vector3 newScaleVelocity)
-{
+void Entity::setScaleVelocity(Vector3 newScaleVelocity){
     _scaleVelocity = newScaleVelocity;
 }
 
-Vector3 Entity::getRotationVelocity()
-{
+Vector3 Entity::getRotationVelocity(){
     return _rotationVelocity;
 }
 
-void Entity::setRotationVelocity(Vector3 newRotationVelocity)
-{
+void Entity::setRotationVelocity(Vector3 newRotationVelocity){
     _rotationVelocity = newRotationVelocity;
 }
 
-Vector3 Entity::getEyeVector()
-{
+Vector3 Entity::getEyeVector(){
     return _eyeVector;
 }
 
-void Entity::setEyeVector(Vector3 newEyeVector)
-{
+void Entity::setEyeVector(Vector3 newEyeVector){
     _eyeVector = newEyeVector;
 }
 
-Vector3 Entity::getUpVector()
-{
+Vector3 Entity::getUpVector(){
     return _upVector;
 }
 
-void Entity::setUpVector(Vector3 newUpVector)
-{
+void Entity::setUpVector(Vector3 newUpVector){
     _upVector = newUpVector;
 }
 
@@ -107,7 +89,6 @@ _upVector(makeVector3(0.0f, 1.0f, 0.0f))
 {
 }
 
-Entity::~Entity()
-{
+Entity::~Entity(){
     
 }

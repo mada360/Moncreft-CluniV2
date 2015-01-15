@@ -5,11 +5,13 @@
 //  Created by Adam Worley on 14/01/2015.
 //  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
+// Followed Tutorial made by Dimitriy Dounaev, youtube channel - https://www.youtube.com/channel/UCaFy_GmZA02jbHGfc3zUuPw
+
 
 #ifndef __OpenGLCube__ShaderData__
 #define __OpenGLCube__ShaderData__
 
-#include <stdio.h>
+#include <iostream>
 #include <GLFW/glfw3.h>
 #include "Vector3.h"
 #include "Vector4.h"
@@ -29,7 +31,9 @@ public:
     void set_uLightPosition(Vector3 newPosition);
     
     ShaderData(Vector4 newColor, Vector3 newPosition);
-    ~ShaderData();   
+    ~ShaderData();
+    
+    
 };
 
-#endif /* defined(__OpenGLCube__ShaderData__) */
+#endif /* defined(__SimpleFPS__ShaderData__) */

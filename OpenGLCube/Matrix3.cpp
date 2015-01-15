@@ -1,16 +1,15 @@
 //
 //  Matrix3.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 22/12/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
 #include "Matrix3.h"
 #include <math.h>
 
-Matrix3 scalerMultiplyMatrix3(Matrix3 matrix, GLfloat scalerValue)
-{
+Matrix3 scalerMultiplyMatrix3(Matrix3 matrix, GLfloat scalerValue){
     Matrix3 newMatrix3;
     newMatrix3.m00 = matrix.m00*scalerValue;
     newMatrix3.m01 = matrix.m01*scalerValue;
@@ -25,8 +24,7 @@ Matrix3 scalerMultiplyMatrix3(Matrix3 matrix, GLfloat scalerValue)
     return newMatrix3;
 }
 
-Matrix3 addMatrix3(Matrix3 matrixA, Matrix3 matrixB)
-{
+Matrix3 addMatrix3(Matrix3 matrixA, Matrix3 matrixB){
     Matrix3 newMatrix3;
     newMatrix3.m00 = matrixA.m00 + matrixB.m00;
     newMatrix3.m01 = matrixA.m01 + matrixB.m01;
@@ -41,8 +39,7 @@ Matrix3 addMatrix3(Matrix3 matrixA, Matrix3 matrixB)
     return newMatrix3;
 }
 
-Matrix3 makeRotationMatrix3(GLfloat angle, GLfloat xAxis, GLfloat yAxis,GLfloat zAxis)
-{
+Matrix3 makeRotationMatrix3(GLfloat angle, GLfloat xAxis, GLfloat yAxis,GLfloat zAxis){
     GLfloat x = xAxis;
     GLfloat y = yAxis;
     GLfloat z = zAxis;

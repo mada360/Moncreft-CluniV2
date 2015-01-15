@@ -1,19 +1,20 @@
 //
 //  ShaderLoader.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 13/09/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
+// Followed Tutorial made by Dimitriy Dounaev, youtube channel - https://www.youtube.com/channel/UCaFy_GmZA02jbHGfc3zUuPw
 
-#ifndef __SimpleFPS__ShaderLoader__
-#define __SimpleFPS__ShaderLoader__
+
+#ifndef __OpenGLCube__ShaderLoader__
+#define __OpenGLCube__ShaderLoader__
 
 #include <iostream>
 #include <GLFW/glfw3.h>
 
-class ShaderLoader
-{
+class ShaderLoader{
 private:
     
     GLuint _programHandle;
@@ -26,7 +27,7 @@ public:
     
     ShaderLoader(const char *sourceVS, const char *sourceFS);
     ~ShaderLoader();
-
+    
 };
 
-#endif /* defined(__SimpleFPS__ShaderLoader__) */
+#endif /* defined(__OpenGLCube__ShaderLoader__) */

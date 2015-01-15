@@ -1,26 +1,23 @@
 //
 //  PlayerInputSystem.cpp
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 26/11/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
 #include "PlayerInputSystem.h"
 
-void PlayerInputSystem::setCurrentPlayer(Entity *newPlayer)
-{
+void PlayerInputSystem::setCurrentPlayer(Entity *newPlayer){
     _currentPlayer = newPlayer;
     _eyeVector = normalizeVector3(newPlayer->getEyeVector());
 }
 
-PlayerInputSystem::PlayerInputSystem(): _window(glfwGetCurrentContext())
-{
+PlayerInputSystem::PlayerInputSystem(): _window(glfwGetCurrentContext()){
     glfwGetCursorPos(_window, &_lastMousePosition.x, &_lastMousePosition.y);
 }
 
-PlayerInputSystem::~PlayerInputSystem()
-{
+PlayerInputSystem::~PlayerInputSystem(){
     
 }
 
@@ -33,17 +30,16 @@ void PlayerInputSystem::keyCallback(GLFWwindow *window,
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
         
         if (GLFW_CURSOR_DISABLED == glfwGetInputMode(glfwGetCurrentContext(), GLFW_CURSOR)) {
-        glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-    } else {
-        glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-    }
+            glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+        } else {
+            glfwSetInputMode(glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+        }
         
     }
     
 }
 
-void PlayerInputSystem::update()
-{
+void PlayerInputSystem::update(){
     if (_currentPlayer != NULL &&
         glfwGetInputMode(_window, GLFW_CURSOR) == GLFW_CURSOR_DISABLED) {
         
@@ -85,8 +81,7 @@ void PlayerInputSystem::keyCallbackFun(GLFWwindow *window,
     playerInputSystem->keyCallback(window, key, scancode, action, mods);
 }
 
-PlayerInputSystem& PlayerInputSystem::getPlayerInputSystem()
-{
+PlayerInputSystem& PlayerInputSystem::getPlayerInputSystem(){
     static PlayerInputSystem *playerInputSystem = NULL;
     
     if (playerInputSystem == NULL) {
@@ -100,8 +95,7 @@ PlayerInputSystem& PlayerInputSystem::getPlayerInputSystem()
     return *playerInputSystem;
 }
 
-void PlayerInputSystem::destroyPlayerInputSystem()
-{
+void PlayerInputSystem::destroyPlayerInputSystem(){
     PlayerInputSystem *playerInputSystem = &getPlayerInputSystem();
     delete playerInputSystem;
 }

@@ -1,13 +1,13 @@
 //
 //  Matrix3.h
-//  SimpleFPS
+//  OpenGLCube
 //
-//  Created by Dimitriy Dounaev on 22/12/13.
-//  Copyright (c) 2013 Dimitriy Dounaev. All rights reserved.
+//  Created by Adam Worley on 14/01/2015.
+//  Copyright (c) 2015 Adam Worley. All rights reserved.
 //
 
-#ifndef __SimpleFPS__Matrix3__
-#define __SimpleFPS__Matrix3__
+#ifndef __OpenGLCube__Matrix3__
+#define __OpenGLCube__Matrix3__
 
 #include <iostream>
 #include <GLFW/glfw3.h>
@@ -31,7 +31,7 @@ Matrix3 addMatrix3(Matrix3 matrixA, Matrix3 matrixB);
 Matrix3 makeRotationMatrix3(GLfloat angle, GLfloat xAxis, GLfloat yAxis, GLfloat zAxis);
 
 const Matrix3 identityMatrix3 = {  1.0f, 0.0f, 0.0f,
-                            0.0f, 1.0f, 0.0f,
-                            0.0f, 0.0f, 1.0f};
+    0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 1.0f};
 
-#endif /* defined(__SimpleFPS__Matrix3__) */
+#endif /* defined(__OpenGLCube__Matrix3__) */
