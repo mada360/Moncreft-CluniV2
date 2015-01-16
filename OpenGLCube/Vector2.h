@@ -11,8 +11,7 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 
-typedef struct
-{
+typedef struct {
     GLdouble x;
     GLdouble y;
     

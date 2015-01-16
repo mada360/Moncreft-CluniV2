@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rendersystem',['RenderSystem',['../class_render_system.html',1,'']]],
-  ['resourcemanager',['ResourceManager',['../class_resource_manager.html',1,'']]]
+  ['playerinputsystem',['PlayerInputSystem',['../class_player_input_system.html',1,'']]]
 ];

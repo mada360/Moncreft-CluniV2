@@ -22,7 +22,7 @@
 class GameManager{
 private:
     
-    bool _running;
+    bool _running;  /*!< Boolean to check if game is running. */
     RenderSystem *_renderSystem;
     ResourceManager *_resourceManager;
     MovementSystem *_movementSystem;

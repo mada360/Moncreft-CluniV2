@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['scene',['Scene',['../class_scene.html',1,'']]],
-  ['shaderdata',['ShaderData',['../class_shader_data.html',1,'']]],
-  ['shaderinterface',['ShaderInterface',['../class_shader_interface.html',1,'']]],
-  ['shaderloader',['ShaderLoader',['../class_shader_loader.html',1,'']]]
+  ['rendersystem',['RenderSystem',['../class_render_system.html',1,'']]],
+  ['resourcemanager',['ResourceManager',['../class_resource_manager.html',1,'']]]
 ];

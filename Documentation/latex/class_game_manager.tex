@@ -9,13 +9,72 @@
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_game_manager_aa08a255191c165e7d47e37ea61cb3171}{}static \hyperlink{class_game_manager}{Game\+Manager} \& {\bfseries get\+Game\+Manager} ()\label{class_game_manager_aa08a255191c165e7d47e37ea61cb3171}
-
+static \hyperlink{class_game_manager}{Game\+Manager} \& \hyperlink{class_game_manager_aa08a255191c165e7d47e37ea61cb3171}{get\+Game\+Manager} ()
 \item 
-\hypertarget{class_game_manager_aea5ff4f47b90e72f242fe542b3c78c06}{}static void {\bfseries destroy\+Game\+Manager} ()\label{class_game_manager_aea5ff4f47b90e72f242fe542b3c78c06}
-
+static void \hyperlink{class_game_manager_aea5ff4f47b90e72f242fe542b3c78c06}{destroy\+Game\+Manager} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_manager_aea5ff4f47b90e72f242fe542b3c78c06}{}\index{Game\+Manager@{Game\+Manager}!destroy\+Game\+Manager@{destroy\+Game\+Manager}}
+\index{destroy\+Game\+Manager@{destroy\+Game\+Manager}!Game\+Manager@{Game\+Manager}}
+\subsubsection[{destroy\+Game\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Manager\+::destroy\+Game\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_manager_aea5ff4f47b90e72f242fe542b3c78c06}
+Gets the current game and deletes it.
+
+Console output during development, not needed -\/ May remove.
+
+Gets the context window and destroys
+
+End glfw and free memory. \hypertarget{class_game_manager_aa08a255191c165e7d47e37ea61cb3171}{}\index{Game\+Manager@{Game\+Manager}!get\+Game\+Manager@{get\+Game\+Manager}}
+\index{get\+Game\+Manager@{get\+Game\+Manager}!Game\+Manager@{Game\+Manager}}
+\subsubsection[{get\+Game\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+Manager} \& Game\+Manager\+::get\+Game\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_game_manager_aa08a255191c165e7d47e37ea61cb3171}
+Create instance of game.
+
+Ensures that the following code will not run if game\+Manager has been instantiated.
+
+Initialise window.
+
+Set red bit depth to a value of 8.
+
+Set green bit depth to a value of 8.
+
+Set blue bit depth to a value of 8.
+
+Set alpha bit depth to a value of 8.
+
+Window is set to a fixed size.
+
+A pure virtual member.
+
+\begin{DoxySeeAlso}{See also}
+glfw\+Create\+Window 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em 1280} & Screen Width. \\
+\hline
+{\em 720} & The screen height. \\
+\hline
+{\em N\+U\+L\+L,N\+U\+L\+L} & -\/ Not used, as options for multiple displays.\\
+\hline
+\end{DoxyParams}
+Screen settings glfw\+Create\+Window(width, height, title...
+
+The other two parameters are used for multiple display setups and will not be used.
+
+Creates the context window, the game window is now visible.
+
+Console output -\/ Not needed, may remove.
+
+Return the window/context to be set to run in main. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

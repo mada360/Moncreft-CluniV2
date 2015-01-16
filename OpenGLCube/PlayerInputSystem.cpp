@@ -17,16 +17,31 @@ PlayerInputSystem::PlayerInputSystem(): _window(glfwGetCurrentContext()){
     glfwGetCursorPos(_window, &_lastMousePosition.x, &_lastMousePosition.y);
 }
 
+//! Player input destructor.
+/*!
+ Deletes player input system.
+ */
 PlayerInputSystem::~PlayerInputSystem(){
     
 }
 
+//!Player input system Cursor
+/*!
+ \param int key get key input as int value.
+ \param int scancode
+ \param int action Type of key action e.g. Press/Release
+ \param int mods
+  */
 void PlayerInputSystem::keyCallback(GLFWwindow *window,
                                     int key,
                                     int scancode,
                                     int action,
                                     int mods)
 {
+    //!Escape window context
+    /*!
+     Releases cursor from window context.
+     */
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
         
         if (GLFW_CURSOR_DISABLED == glfwGetInputMode(glfwGetCurrentContext(), GLFW_CURSOR)) {
@@ -39,6 +54,13 @@ void PlayerInputSystem::keyCallback(GLFWwindow *window,
     
 }
 
+//!Keyboard controls
+/*!
+ \param W increase Z position(move forward)
+ \param S decrease z position(move backwards)
+ \param A Perform matrix transform and subtract from position (Move left)
+ \param D Perform matrix transform and add to position (Move right)
+ */
 void PlayerInputSystem::update(){
     if (_currentPlayer != NULL &&
         glfwGetInputMode(_window, GLFW_CURSOR) == GLFW_CURSOR_DISABLED) {
@@ -58,6 +80,12 @@ void PlayerInputSystem::update(){
         if (glfwGetKey(_window, GLFW_KEY_D)) {
             _currentPlayer->setPosition(addVector3(_currentPlayer->getPosition(), scalerMultiplyVector3(crossProductVector3(_eyeVector, makeVector3(0.0f, 1.0f, 0.0f)), 0.07f)));
         }
+        
+        //!Mouse controls
+        /*!
+         Uses mouse position cooridinates on screen and matrix transformations to calculate the angle needed after mouse movement
+         to adjust the camera position.
+         */
         
         Vector2 currentMousePosition;
         glfwGetCursorPos(_window, &currentMousePosition.x, &currentMousePosition.y);

@@ -63,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -98,13 +99,85 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>runGameLoop</b> ()</t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa08a255191c165e7d47e37ea61cb3171"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa08a255191c165e7d47e37ea61cb3171"></a>
-static <a class="el" href="class_game_manager.html">GameManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getGameManager</b> ()</td></tr>
+<tr class="memitem:aa08a255191c165e7d47e37ea61cb3171"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_manager.html">GameManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aa08a255191c165e7d47e37ea61cb3171">getGameManager</a> ()</td></tr>
 <tr class="separator:aa08a255191c165e7d47e37ea61cb3171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5ff4f47b90e72f242fe542b3c78c06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5ff4f47b90e72f242fe542b3c78c06"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyGameManager</b> ()</td></tr>
+<tr class="memitem:aea5ff4f47b90e72f242fe542b3c78c06"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aea5ff4f47b90e72f242fe542b3c78c06">destroyGameManager</a> ()</td></tr>
 <tr class="separator:aea5ff4f47b90e72f242fe542b3c78c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aea5ff4f47b90e72f242fe542b3c78c06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager::destroyGameManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the current game and deletes it.</p>
+<p>Console output during development, not needed - May remove.</p>
+<p>Gets the context window and destroys</p>
+<p>End glfw and free memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa08a255191c165e7d47e37ea61cb3171"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_manager.html">GameManager</a> &amp; GameManager::getGameManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create instance of game.</p>
+<p>Ensures that the following code will not run if gameManager has been instantiated.</p>
+<p>Initialise window.</p>
+<p>Set red bit depth to a value of 8.</p>
+<p>Set green bit depth to a value of 8.</p>
+<p>Set blue bit depth to a value of 8.</p>
+<p>Set alpha bit depth to a value of 8.</p>
+<p>Window is set to a fixed size.</p>
+<p>A pure virtual member.</p>
+<dl class="section see"><dt>See also</dt><dd>glfwCreateWindow </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">1280</td><td>Screen Width. </td></tr>
+    <tr><td class="paramname">720</td><td>The screen height. </td></tr>
+    <tr><td class="paramname">NULL,NULL</td><td>- Not used, as options for multiple displays.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Screen settings glfwCreateWindow(width, height, title...</p>
+<p>The other two parameters are used for multiple display setups and will not be used.</p>
+<p>Creates the context window, the game window is now visible.</p>
+<p>Console output - Not needed, may remove.</p>
+<p>Return the window/context to be set to run in main. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/<a class="el" href="_game_manager_8h_source.html">GameManager.h</a></li>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/GameManager.cpp</li>
@@ -112,7 +185,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyGameMan
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 15 2015 21:03:32 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 16 2015 10:02:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

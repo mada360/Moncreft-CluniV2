@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamemanager',['GameManager',['../class_game_manager.html',1,'']]]
+  ['entity',['Entity',['../class_entity.html',1,'']]]
 ];
