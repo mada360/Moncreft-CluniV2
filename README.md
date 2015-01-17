@@ -21,12 +21,13 @@ In following these tutorials, I learned a lot about how the classes were impleme
 ####Urgent -
 - [ ] Cube not loading.
 - [ ] Cube fails to load sometimes (Previous error).
+- [ ] Rendering issue on cubes pushed.
 
 ####Needs Fixing -
 - [ ] Only renders to half the screen, until esc -> move the window -> select window again.
 
 ####More features -
-- [ ] MOAR CUBES!!
+- [x] MOAR CUBES!!
 - [ ] Different Cubes.
 - [ ] Jump feature, for all you're jumping needs.
 - [ ] Installer!!
