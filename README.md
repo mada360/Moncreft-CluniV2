@@ -19,7 +19,7 @@ In following these tutorials, I learned a lot about how the classes were impleme
 ##Check list
 
 ####Urgent -
-- [ ] Cube not loading.
+- [x] Cube not loading.
 - [ ] Cube fails to load sometimes (Previous error).
 - [ ] Rendering issue on cubes pushed.
 
