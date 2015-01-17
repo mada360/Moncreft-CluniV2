@@ -95,7 +95,65 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a013d7f5d032bc0920e53083bf3ccaa2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a013d7f5d032bc0920e53083bf3ccaa2c"></a>
 std::vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getChildren</b> ()</td></tr>
 <tr class="separator:a013d7f5d032bc0920e53083bf3ccaa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10176d75a9cc0da56626f682d083507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ad10176d75a9cc0da56626f682d083507">Scene</a> ()</td></tr>
+<tr class="memdesc:ad10176d75a9cc0da56626f682d083507"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html">Scene</a> Creator.  <a href="#ad10176d75a9cc0da56626f682d083507">More...</a><br /></td></tr>
+<tr class="separator:ad10176d75a9cc0da56626f682d083507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8cec2e32546713915f8c6303c951f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene</a> ()</td></tr>
+<tr class="memdesc:a3b8cec2e32546713915f8c6303c951f1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_scene.html">Scene</a> Destructor.  <a href="#a3b8cec2e32546713915f8c6303c951f1">More...</a><br /></td></tr>
+<tr class="separator:a3b8cec2e32546713915f8c6303c951f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad10176d75a9cc0da56626f682d083507"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scene::Scene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_scene.html">Scene</a> Creator. </p>
+<p>Creates and populates the scene. </p>
+<p>Create instance of resource manager</p>
+<p>Creates a resource manager to deal with generation of the cubes</p>
+<p>Create a cube <a class="el" href="class_entity.html">Entity</a></p>
+<p>Takes the paramaters :- </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X-Pos</td><td>a float value for the x-position in the scene. </td></tr>
+    <tr><td class="paramname">Y-Pos</td><td>a float value for the Y-position in the scene. </td></tr>
+    <tr><td class="paramname">Z-Pos</td><td>a float value for the Z-position in the scene.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Create a camera for the scene</p>
+<p>Generates a camera for the scene at world space origin.</p>
+<p>Setup Player input</p>
+<p>Applys player input system controls, onto the camera.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b8cec2e32546713915f8c6303c951f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scene::~Scene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_scene.html">Scene</a> Destructor. </p>
+<p>Destructs the scene by deleting each item/child created, freeing them from memory. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/<a class="el" href="_scene_8h_source.html">Scene.h</a></li>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/Scene.cpp</li>
@@ -103,7 +161,7 @@ std::vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt; *&#160;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 16 2015 10:02:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 16 2015 11:33:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

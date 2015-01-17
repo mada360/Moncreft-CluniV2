@@ -37,7 +37,7 @@
 		612242781A656E0300FF27FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = usr/share/man/man1;
+			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
 				61225F331A6766E400C711D2 /* SimpleFPS.1 in CopyFiles */,

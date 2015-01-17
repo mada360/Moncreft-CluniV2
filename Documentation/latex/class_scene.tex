@@ -5,8 +5,58 @@
 \item 
 \hypertarget{class_scene_a013d7f5d032bc0920e53083bf3ccaa2c}{}std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ $\ast$ {\bfseries get\+Children} ()\label{class_scene_a013d7f5d032bc0920e53083bf3ccaa2c}
 
-\end{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_scene}{Scene} Creator. \end{DoxyCompactList}\item 
+\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_scene}{Scene} Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}{}\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection[{Scene}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_scene_ad10176d75a9cc0da56626f682d083507}
+
+
+\hyperlink{class_scene}{Scene} Creator. 
+
+Creates and populates the scene. Create instance of resource manager
+
+Creates a resource manager to deal with generation of the cubes
+
+Create a cube \hyperlink{class_entity}{Entity}
+
+Takes the paramaters \+:-\/ 
+\begin{DoxyParams}{Parameters}
+{\em X-\/\+Pos} & a float value for the x-\/position in the scene. \\
+\hline
+{\em Y-\/\+Pos} & a float value for the Y-\/position in the scene. \\
+\hline
+{\em Z-\/\+Pos} & a float value for the Z-\/position in the scene.\\
+\hline
+\end{DoxyParams}
+Create a camera for the scene
+
+Generates a camera for the scene at world space origin.
+
+Setup Player input
+
+Applys player input system controls, onto the camera.\hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}{}\index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
+\index{````~Scene@{$\sim$\+Scene}!Scene@{Scene}}
+\subsubsection[{$\sim$\+Scene}]{\setlength{\rightskip}{0pt plus 5cm}Scene\+::$\sim$\+Scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}
+
+
+\hyperlink{class_scene}{Scene} Destructor. 
+
+Destructs the scene by deleting each item/child created, freeing them from memory. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

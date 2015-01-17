@@ -80,6 +80,10 @@ void Entity::setUpVector(Vector3 newUpVector){
     _upVector = newUpVector;
 }
 
+//!Entity
+/*!
+ Performs matrix transormation on all scene elements.
+ */
 Entity::Entity(VertexBuffer *vertexBuffer, Vector3 position):
 _vertexBuffer(vertexBuffer), _position(position),
 _scale(makeVector3(1.0f, 1.0f, 1.0f)), _rotation(makeVector3(0.0f, 0.0f, 0.0f)),

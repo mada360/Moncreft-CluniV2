@@ -13,6 +13,10 @@ Entity* CameraSystem::getCurrentCamera(){
     return _currentCamera;
 }
 
+//!Create Camera entity
+/*!
+ Creates the camera entity to be added to the scene
+ */
 void CameraSystem::setCurrentCamera(Entity *newCamera){
     _currentCamera = newCamera;
     
@@ -39,6 +43,11 @@ CameraSystem& CameraSystem::getCameraSystem(){
     return *cameraSystem;
 }
 
+
+//!Destruct Camera entity
+/*!
+ Gets the camera and deletes it.
+ */
 void CameraSystem::destroyCameraSystem(){
     CameraSystem *cameraSystem = &getCameraSystem();
     delete cameraSystem;

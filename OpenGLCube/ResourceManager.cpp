@@ -10,23 +10,49 @@
 #include "TriangleVertices.h"
 #include "CubeVertices.h"
 
+
+//!Get Shader Array
+/*!
+ Returns the variable _shader array.
+ */
 std::vector<ShaderInterface *>* ResourceManager::getShaderArray(){
     return _shaderArray;
 }
 
+//!Get Vertex Array
+/*!
+ Returns the variable _vertexBufferArray
+ */
 std::vector<VertexBuffer *>* ResourceManager::getVertexBufferArray(){
     return _vertexBufferArray;
 }
 
+//!Resource Manager Constructor
+/*!
+Uses shader matrices to generate resources.
+ */
 ResourceManager::ResourceManager(){
     _shaderArray = new std::vector<ShaderInterface *>();
+    //!Color shader (aka colour shader)
+    /*!
+     Takes the colour shader files and applies them to the shader interface.
+     */
     ShaderInterface *shader = new ShaderInterface("ColorShader.vsh", "ColorShader.fsh");
     _shaderArray->push_back(shader);
+    //!Light shader
+    /*!
+     Takes the light shader files and applies them to the shader interface.
+     */
     ShaderInterface *lightShader = new ShaderInterface("SimpleLightShader.vsh", "SimpleLightShader.fsh");
     _shaderArray->push_back(lightShader);
     
     shaderData = new ShaderData(makeVector4(1.0f, 0.0f, 1.0f, 1.0f), makeVector3(1.0f, 1.0f, 1.0f));
     
+    
+    //!Pyramid
+    /*!
+     Vertex buffer for a pyrmaid shape.
+     */
     _vertexBufferArray = new std::vector<VertexBuffer *>();
     VertexBuffer *vertexBuffer = new VertexBuffer(vertices,
                                                   sizeof(vertices),
@@ -37,6 +63,11 @@ ResourceManager::ResourceManager(){
                                                   shaderData,
                                                   NULL,
                                                   NULL);
+    
+    //!Cube
+    /*!
+     Vertex buffer for a cube.
+     */
     _vertexBufferArray->push_back(vertexBuffer);
     VertexBuffer *cubeVertexBuffer = new VertexBuffer(cubeVertices,
                                                       sizeof(cubeVertices),
@@ -50,6 +81,10 @@ ResourceManager::ResourceManager(){
     _vertexBufferArray->push_back(cubeVertexBuffer);
 }
 
+//!Resource Manager Destructor
+/*!
+ Deletes all the shaders and then deletes the shader array, before deleting the shaderData array.
+ */
 ResourceManager::~ResourceManager(){
     
     for (std::vector<ShaderInterface *>::iterator iterator = _shaderArray->begin();
@@ -70,6 +105,11 @@ ResourceManager::~ResourceManager(){
     delete _vertexBufferArray;
 }
 
+
+//!Get resource manager method
+/*!
+ Returns the resource manager.
+ */
 ResourceManager& ResourceManager::getResourceManager(){
     static ResourceManager *resourceManager = NULL;
     
@@ -80,6 +120,10 @@ ResourceManager& ResourceManager::getResourceManager(){
     return *resourceManager;
 }
 
+//!destroy Resource Manager
+/*!
+Deletes the resource manager and frees up the memory.
+ */
 void ResourceManager::destroyResourceManager(){
     ResourceManager *resourceManager = &getResourceManager();
     delete resourceManager;

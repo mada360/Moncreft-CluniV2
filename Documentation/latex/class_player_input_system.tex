@@ -6,9 +6,8 @@
 \hypertarget{class_player_input_system_aa3f47a4273ece19097dca4a1e43cd952}{}void {\bfseries set\+Current\+Player} (\hyperlink{class_entity}{Entity} $\ast$new\+Player)\label{class_player_input_system_aa3f47a4273ece19097dca4a1e43cd952}
 
 \item 
-\hypertarget{class_player_input_system_afba45156bbafbfd5500650d33ef589ca}{}void {\bfseries update} ()\label{class_player_input_system_afba45156bbafbfd5500650d33ef589ca}
-
-\end{DoxyCompactItemize}
+void \hyperlink{class_player_input_system_afba45156bbafbfd5500650d33ef589ca}{update} ()
+\begin{DoxyCompactList}\small\item\em Keyboard controls. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,6 +21,33 @@
 
 \end{DoxyCompactItemize}
 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_player_input_system_afba45156bbafbfd5500650d33ef589ca}{}\index{Player\+Input\+System@{Player\+Input\+System}!update@{update}}
+\index{update@{update}!Player\+Input\+System@{Player\+Input\+System}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+Input\+System\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_player_input_system_afba45156bbafbfd5500650d33ef589ca}
+
+
+Keyboard controls. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & increase Z position(move forward) \\
+\hline
+{\em S} & decrease z position(move backwards) \\
+\hline
+{\em A} & Perform matrix transform and subtract from position (Move left) \\
+\hline
+{\em D} & Perform matrix transform and add to position (Move right) \\
+\hline
+\end{DoxyParams}
+Mouse controls
+
+Uses mouse position cooridinates on screen and matrix transformations to calculate the angle needed after mouse movement to adjust the camera position.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

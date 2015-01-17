@@ -16,6 +16,10 @@ MovementSystem::~MovementSystem(){
     
 }
 
+//!Movement class
+/*!
+ Uses the transforms returned by the entity to perform player movement.
+ */
 void MovementSystem::update(std::vector<Entity *> *entityArray){
     for (std::vector<Entity *>::iterator iterator = entityArray->begin(); iterator != entityArray->end(); iterator++) {
         
@@ -28,6 +32,10 @@ void MovementSystem::update(std::vector<Entity *> *entityArray){
     }
 }
 
+//!getMovementSystem
+/*!
+ If there is no movement system, one will be created and returned.
+ */
 MovementSystem& MovementSystem::getMovementSystem(){
     static MovementSystem* movementSystem = NULL;
     
@@ -38,6 +46,10 @@ MovementSystem& MovementSystem::getMovementSystem(){
     return *movementSystem;
 }
 
+//!destroyMovementSystem
+/*!
+ Gets the movement system and then deletes it and frees up memory.
+ */
 void MovementSystem::destroyMovementSystem(){
     MovementSystem *movementSystem = &getMovementSystem();
     delete movementSystem;
