@@ -38,11 +38,19 @@ _shaderData(shaderData){
     glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
 }
 
+//!Vertex Buffer destructor
+/*!
+ Deletes all vertex buffers and sets the vertexBuffer variable to 0.
+ */
 VertexBuffer::~VertexBuffer(){
     glDeleteBuffers(1, &_vertexBufferID);
     _vertexBufferID = 0;
 }
 
+//!configure Vertex Attributes
+/*!
+ When _shader is empty (-1 position) grab a new position vertex and apply this to the vertex attributes.
+ */
 void VertexBuffer::configureVertexAttributes(){
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBufferID);
     if (_shader->get_aPositionVertex() != -1) {
@@ -56,6 +64,13 @@ void VertexBuffer::configureVertexAttributes(){
     }
 }
 
+//!render Vertex Buffer
+/*!
+ Calls for the open gl to draw arrays
+ \param Primitve render type
+ \param Start position (0 start)
+ \param Size of array vertices. 
+ */
 void VertexBuffer::renderVertexBuffer(){
     glDrawArrays(_mode, 0, _count);
 }

@@ -32,13 +32,25 @@ GLint ShaderInterface::get_uLightPosition(){
     return _uLightPosition;
 }
 
+//!Shader Interface
+/*!
+ Takes the shader files applies them to the Shader loader.
+ */
 ShaderInterface::ShaderInterface(const char *VS, const char *FS){
     
     _vertexShaderString = loadTextFromFile(VS);
     _fragmentShaderString = loadTextFromFile(FS);
     
+    //!new ShaderLoader
+    /*!
+     loads the vertex and fragment shader text files into the shader loader.
+     */
     shader = new ShaderLoader(_vertexShaderString, _fragmentShaderString);
     
+    //!Free shader
+    /*!
+     Release the shader text files from memory.
+     */
     free(_vertexShaderString);
     free(_fragmentShaderString);
     
@@ -50,12 +62,21 @@ ShaderInterface::ShaderInterface(const char *VS, const char *FS){
     
 }
 
+//!Shader Interface Deconstructor
+/*!
+ Delets the shader.
+ */
 ShaderInterface::~ShaderInterface(){
     delete shader;
 }
 
 
-
+//!Load Text From File
+/*!
+ Loads in the text from the external shader files. 
+ Currently has infrequent errors and needs to be fixed!
+ Returns the data from within the text file.
+ */
 char *ShaderInterface::loadTextFromFile(const char *file){
     std::ifstream input_file;
     int length;
