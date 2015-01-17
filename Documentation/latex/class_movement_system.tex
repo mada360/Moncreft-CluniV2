@@ -3,19 +3,52 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_movement_system_a0795197be538c631332c888824ab1bee}{}void {\bfseries update} (std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ $\ast$entity\+Array)\label{class_movement_system_a0795197be538c631332c888824ab1bee}
-
-\end{DoxyCompactItemize}
+void \hyperlink{class_movement_system_a0795197be538c631332c888824ab1bee}{update} (std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ $\ast$entity\+Array)
+\begin{DoxyCompactList}\small\item\em Movement class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_movement_system_a9c24da715496fbe082e1302091a8cf2c}{}static \hyperlink{class_movement_system}{Movement\+System} \& {\bfseries get\+Movement\+System} ()\label{class_movement_system_a9c24da715496fbe082e1302091a8cf2c}
+static \hyperlink{class_movement_system}{Movement\+System} \& \hyperlink{class_movement_system_a9c24da715496fbe082e1302091a8cf2c}{get\+Movement\+System} ()
+\begin{DoxyCompactList}\small\item\em get\+Movement\+System \end{DoxyCompactList}\item 
+static void \hyperlink{class_movement_system_a24947d2de2835b087cabad3dce7d431c}{destroy\+Movement\+System} ()
+\begin{DoxyCompactList}\small\item\em destroy\+Movement\+System \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{class_movement_system_a24947d2de2835b087cabad3dce7d431c}{}static void {\bfseries destroy\+Movement\+System} ()\label{class_movement_system_a24947d2de2835b087cabad3dce7d431c}
 
-\end{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\hypertarget{class_movement_system_a24947d2de2835b087cabad3dce7d431c}{}\index{Movement\+System@{Movement\+System}!destroy\+Movement\+System@{destroy\+Movement\+System}}
+\index{destroy\+Movement\+System@{destroy\+Movement\+System}!Movement\+System@{Movement\+System}}
+\subsubsection[{destroy\+Movement\+System}]{\setlength{\rightskip}{0pt plus 5cm}void Movement\+System\+::destroy\+Movement\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_movement_system_a24947d2de2835b087cabad3dce7d431c}
 
+
+destroy\+Movement\+System 
+
+Gets the movement system and then deletes it and frees up memory. \hypertarget{class_movement_system_a9c24da715496fbe082e1302091a8cf2c}{}\index{Movement\+System@{Movement\+System}!get\+Movement\+System@{get\+Movement\+System}}
+\index{get\+Movement\+System@{get\+Movement\+System}!Movement\+System@{Movement\+System}}
+\subsubsection[{get\+Movement\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Movement\+System} \& Movement\+System\+::get\+Movement\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_movement_system_a9c24da715496fbe082e1302091a8cf2c}
+
+
+get\+Movement\+System 
+
+If there is no movement system, one will be created and returned. \hypertarget{class_movement_system_a0795197be538c631332c888824ab1bee}{}\index{Movement\+System@{Movement\+System}!update@{update}}
+\index{update@{update}!Movement\+System@{Movement\+System}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Movement\+System\+::update (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Entity} $\ast$ $>$ $\ast$}]{entity\+Array}
+\end{DoxyParamCaption}
+)}\label{class_movement_system_a0795197be538c631332c888824ab1bee}
+
+
+Movement class. 
+
+Uses the transforms returned by the entity to perform player movement. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

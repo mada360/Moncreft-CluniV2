@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "cdegmprsuv~",
   1: "cegmprsv",
-  2: "dgsu~"
+  2: "cdegrsu~"
 };
 
 var indexSectionNames =

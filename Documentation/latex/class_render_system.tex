@@ -4,26 +4,34 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_render_system_a9e564b1fdbc1f2b192786565108604a9}{get\+Current\+Camera} ()
-\begin{DoxyCompactList}\small\item\em Create Camera entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Grabs current camera entity. \end{DoxyCompactList}\item 
 \hypertarget{class_render_system_a29ddcb343529a9b6454508527f57845f}{}void {\bfseries set\+Current\+Camera} (\hyperlink{class_entity}{Entity} $\ast$new\+Camera)\label{class_render_system_a29ddcb343529a9b6454508527f57845f}
 
 \item 
-\hypertarget{class_render_system_a0ac3f7e1df83b3a44a6c4830d38bdd5e}{}void {\bfseries render} (std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ $\ast$entity\+Array)\label{class_render_system_a0ac3f7e1df83b3a44a6c4830d38bdd5e}
-
-\end{DoxyCompactItemize}
+void \hyperlink{class_render_system_a0ac3f7e1df83b3a44a6c4830d38bdd5e}{render} (std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ $\ast$entity\+Array)
+\begin{DoxyCompactList}\small\item\em Render \hyperlink{class_scene}{Scene}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_render_system_a5e81ee19719a17b1ea8619305375d281}{}static \hyperlink{class_render_system}{Render\+System} \& {\bfseries get\+Render\+System} ()\label{class_render_system_a5e81ee19719a17b1ea8619305375d281}
-
+static \hyperlink{class_render_system}{Render\+System} \& \hyperlink{class_render_system_a5e81ee19719a17b1ea8619305375d281}{get\+Render\+System} ()
 \item 
-\hypertarget{class_render_system_ae9cf102fb529432575d0df662d115ea9}{}static void {\bfseries destroy\+Render\+System} ()\label{class_render_system_ae9cf102fb529432575d0df662d115ea9}
-
-\end{DoxyCompactItemize}
+static void \hyperlink{class_render_system_ae9cf102fb529432575d0df662d115ea9}{destroy\+Render\+System} ()
+\begin{DoxyCompactList}\small\item\em Render System delete. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_render_system_a9e564b1fdbc1f2b192786565108604a9}{}\index{Render\+System@{Render\+System}!get\+Current\+Camera@{get\+Current\+Camera}}
+\hypertarget{class_render_system_ae9cf102fb529432575d0df662d115ea9}{}\index{Render\+System@{Render\+System}!destroy\+Render\+System@{destroy\+Render\+System}}
+\index{destroy\+Render\+System@{destroy\+Render\+System}!Render\+System@{Render\+System}}
+\subsubsection[{destroy\+Render\+System}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+System\+::destroy\+Render\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_render_system_ae9cf102fb529432575d0df662d115ea9}
+
+
+Render System delete. 
+
+Deletes the render system. \hypertarget{class_render_system_a9e564b1fdbc1f2b192786565108604a9}{}\index{Render\+System@{Render\+System}!get\+Current\+Camera@{get\+Current\+Camera}}
 \index{get\+Current\+Camera@{get\+Current\+Camera}!Render\+System@{Render\+System}}
 \subsubsection[{get\+Current\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ Render\+System\+::get\+Current\+Camera (
 \begin{DoxyParamCaption}
@@ -32,9 +40,57 @@
 )}\label{class_render_system_a9e564b1fdbc1f2b192786565108604a9}
 
 
-Create Camera entity. 
+Grabs current camera entity. 
 
-Creates the camera entity to be added to the scene 
+Returns camera variable. \hypertarget{class_render_system_a5e81ee19719a17b1ea8619305375d281}{}\index{Render\+System@{Render\+System}!get\+Render\+System@{get\+Render\+System}}
+\index{get\+Render\+System@{get\+Render\+System}!Render\+System@{Render\+System}}
+\subsubsection[{get\+Render\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Render\+System} \& Render\+System\+::get\+Render\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_render_system_a5e81ee19719a17b1ea8619305375d281}
+glu\+Perspective
+
+
+\begin{DoxyParams}{Parameters}
+{\em Field} & of view measured in degrees. \\
+\hline
+{\em Aspect} & ratio, simpl the width/height. \\
+\hline
+{\em Near} & clipping point. \\
+\hline
+{\em Far} & clipping point i.\+e. draw distance.\\
+\hline
+\end{DoxyParams}
+View port setup
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & and Y for bottom left corner of the viewport (0,0). \\
+\hline
+{\em Width} & of the viewport. \\
+\hline
+{\em Height} & of the Viewport.\\
+\hline
+\end{DoxyParams}
+Cull faces
+
+Removes faces not visible within the viewport.\hypertarget{class_render_system_a0ac3f7e1df83b3a44a6c4830d38bdd5e}{}\index{Render\+System@{Render\+System}!render@{render}}
+\index{render@{render}!Render\+System@{Render\+System}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Render\+System\+::render (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Entity} $\ast$ $>$ $\ast$}]{entity\+Array}
+\end{DoxyParamCaption}
+)}\label{class_render_system_a0ac3f7e1df83b3a44a6c4830d38bdd5e}
+
+
+Render \hyperlink{class_scene}{Scene}. 
+
+Takes all position data from the camera and cube entities and applies the model, view projections matrices to generate the scene. \hyperlink{class_entity}{Entity} iterator
+
+Iterates through the \hyperlink{class_entity}{Entity} array to render each entity object.
+
+Swap buffers 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

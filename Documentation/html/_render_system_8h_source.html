@@ -124,22 +124,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_entity.html">Entity</a> *<a class="code" href="class_render_system.html#a9e564b1fdbc1f2b192786565108604a9">getCurrentCamera</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> setCurrentCamera(<a class="code" href="class_entity.html">Entity</a> *newCamera);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> render(std::vector&lt;Entity *&gt; *entityArray);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_render_system.html#a0ac3f7e1df83b3a44a6c4830d38bdd5e">render</a>(std::vector&lt;Entity *&gt; *entityArray);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_render_system.html">RenderSystem</a>&amp; getRenderSystem();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> destroyRenderSystem();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_render_system.html">RenderSystem</a>&amp; <a class="code" href="class_render_system.html#a5e81ee19719a17b1ea8619305375d281">getRenderSystem</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_render_system.html#ae9cf102fb529432575d0df662d115ea9">destroyRenderSystem</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(__OpenGLCube__RenderSystem__) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_render_system_html"><div class="ttname"><a href="class_render_system.html">RenderSystem</a></div><div class="ttdef"><b>Definition:</b> RenderSystem.h:21</div></div>
 <div class="ttc" id="class_camera_system_html"><div class="ttname"><a href="class_camera_system.html">CameraSystem</a></div><div class="ttdef"><b>Definition:</b> CameraSystem.h:15</div></div>
+<div class="ttc" id="class_render_system_html_ae9cf102fb529432575d0df662d115ea9"><div class="ttname"><a href="class_render_system.html#ae9cf102fb529432575d0df662d115ea9">RenderSystem::destroyRenderSystem</a></div><div class="ttdeci">static void destroyRenderSystem()</div><div class="ttdoc">Render System delete. </div><div class="ttdef"><b>Definition:</b> RenderSystem.cpp:138</div></div>
+<div class="ttc" id="class_render_system_html_a5e81ee19719a17b1ea8619305375d281"><div class="ttname"><a href="class_render_system.html#a5e81ee19719a17b1ea8619305375d281">RenderSystem::getRenderSystem</a></div><div class="ttdeci">static RenderSystem &amp; getRenderSystem()</div><div class="ttdef"><b>Definition:</b> RenderSystem.cpp:97</div></div>
+<div class="ttc" id="class_render_system_html_a0ac3f7e1df83b3a44a6c4830d38bdd5e"><div class="ttname"><a href="class_render_system.html#a0ac3f7e1df83b3a44a6c4830d38bdd5e">RenderSystem::render</a></div><div class="ttdeci">void render(std::vector&lt; Entity * &gt; *entityArray)</div><div class="ttdoc">Render Scene. </div><div class="ttdef"><b>Definition:</b> RenderSystem.cpp:43</div></div>
 <div class="ttc" id="class_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdef"><b>Definition:</b> Entity.h:17</div></div>
-<div class="ttc" id="class_render_system_html_a9e564b1fdbc1f2b192786565108604a9"><div class="ttname"><a href="class_render_system.html#a9e564b1fdbc1f2b192786565108604a9">RenderSystem::getCurrentCamera</a></div><div class="ttdeci">Entity * getCurrentCamera()</div><div class="ttdoc">Create Camera entity. </div><div class="ttdef"><b>Definition:</b> RenderSystem.cpp:17</div></div>
+<div class="ttc" id="class_render_system_html_a9e564b1fdbc1f2b192786565108604a9"><div class="ttname"><a href="class_render_system.html#a9e564b1fdbc1f2b192786565108604a9">RenderSystem::getCurrentCamera</a></div><div class="ttdeci">Entity * getCurrentCamera()</div><div class="ttdoc">Grabs current camera entity. </div><div class="ttdef"><b>Definition:</b> RenderSystem.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 16 2015 11:33:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 17 2015 14:22:55 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

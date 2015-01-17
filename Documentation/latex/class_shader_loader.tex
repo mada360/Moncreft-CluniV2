@@ -3,13 +3,71 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_shader_loader_a2d1ca186f96a158d7a47ad4605d87f4d}{}G\+Luint {\bfseries get\+Program\+Handle} ()\label{class_shader_loader_a2d1ca186f96a158d7a47ad4605d87f4d}
+G\+Luint \hyperlink{class_shader_loader_a2d1ca186f96a158d7a47ad4605d87f4d}{get\+Program\+Handle} ()
+\begin{DoxyCompactList}\small\item\em get\+Program\+Handle \end{DoxyCompactList}\item 
+\hyperlink{class_shader_loader_a5a271cb63e8366c5eb79939d0dac6e88}{Shader\+Loader} (const char $\ast$source\+V\+S, const char $\ast$source\+F\+S)
+\begin{DoxyCompactList}\small\item\em Shader loader. \end{DoxyCompactList}\item 
+\hyperlink{class_shader_loader_ab0861b14890aa622b697c12d786ccf07}{$\sim$\+Shader\+Loader} ()
+\begin{DoxyCompactList}\small\item\em Shader Loader Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{class_shader_loader_a5a271cb63e8366c5eb79939d0dac6e88}{}{\bfseries Shader\+Loader} (const char $\ast$source\+V\+S, const char $\ast$source\+F\+S)\label{class_shader_loader_a5a271cb63e8366c5eb79939d0dac6e88}
 
-\end{DoxyCompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shader_loader_a5a271cb63e8366c5eb79939d0dac6e88}{}\index{Shader\+Loader@{Shader\+Loader}!Shader\+Loader@{Shader\+Loader}}
+\index{Shader\+Loader@{Shader\+Loader}!Shader\+Loader@{Shader\+Loader}}
+\subsubsection[{Shader\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Shader\+Loader\+::\+Shader\+Loader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{source\+V\+S, }
+\item[{const char $\ast$}]{source\+F\+S}
+\end{DoxyParamCaption}
+)}\label{class_shader_loader_a5a271cb63e8366c5eb79939d0dac6e88}
 
+
+Shader loader. 
+
+Loads in the vertex and fragment shader for use in the game engine. Vertex Shader
+
+Compiles the source vertex shader into the open\+G\+L vertex shader.
+
+Fragment Shader
+
+Compiles the source vertex shader into the open\+G\+L fragment shader.
+
+gl\+Attach\+Shader
+
+Attaches the shader to the program handle.
+
+gl\+Link\+Program
+
+Links the program handle using open\+G\+L link program.
+
+Delete the shaders
+
+Now the shaders have been compiled and linked to the program, can now free up the memory used.\hypertarget{class_shader_loader_ab0861b14890aa622b697c12d786ccf07}{}\index{Shader\+Loader@{Shader\+Loader}!````~Shader\+Loader@{$\sim$\+Shader\+Loader}}
+\index{````~Shader\+Loader@{$\sim$\+Shader\+Loader}!Shader\+Loader@{Shader\+Loader}}
+\subsubsection[{$\sim$\+Shader\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}Shader\+Loader\+::$\sim$\+Shader\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shader_loader_ab0861b14890aa622b697c12d786ccf07}
+
+
+Shader Loader Deconstructor. 
+
+Deletes the program and frees up the memory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shader_loader_a2d1ca186f96a158d7a47ad4605d87f4d}{}\index{Shader\+Loader@{Shader\+Loader}!get\+Program\+Handle@{get\+Program\+Handle}}
+\index{get\+Program\+Handle@{get\+Program\+Handle}!Shader\+Loader@{Shader\+Loader}}
+\subsubsection[{get\+Program\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint Shader\+Loader\+::get\+Program\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shader_loader_a2d1ca186f96a158d7a47ad4605d87f4d}
+
+
+get\+Program\+Handle 
+
+Returns the program handle 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -92,13 +92,93 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d1ca186f96a158d7a47ad4605d87f4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d1ca186f96a158d7a47ad4605d87f4d"></a>
-GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getProgramHandle</b> ()</td></tr>
+<tr class="memitem:a2d1ca186f96a158d7a47ad4605d87f4d"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_loader.html#a2d1ca186f96a158d7a47ad4605d87f4d">getProgramHandle</a> ()</td></tr>
+<tr class="memdesc:a2d1ca186f96a158d7a47ad4605d87f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getProgramHandle  <a href="#a2d1ca186f96a158d7a47ad4605d87f4d">More...</a><br /></td></tr>
 <tr class="separator:a2d1ca186f96a158d7a47ad4605d87f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a271cb63e8366c5eb79939d0dac6e88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a271cb63e8366c5eb79939d0dac6e88"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderLoader</b> (const char *sourceVS, const char *sourceFS)</td></tr>
+<tr class="memitem:a5a271cb63e8366c5eb79939d0dac6e88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_loader.html#a5a271cb63e8366c5eb79939d0dac6e88">ShaderLoader</a> (const char *sourceVS, const char *sourceFS)</td></tr>
+<tr class="memdesc:a5a271cb63e8366c5eb79939d0dac6e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader loader.  <a href="#a5a271cb63e8366c5eb79939d0dac6e88">More...</a><br /></td></tr>
 <tr class="separator:a5a271cb63e8366c5eb79939d0dac6e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0861b14890aa622b697c12d786ccf07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_loader.html#ab0861b14890aa622b697c12d786ccf07">~ShaderLoader</a> ()</td></tr>
+<tr class="memdesc:ab0861b14890aa622b697c12d786ccf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader Loader Deconstructor.  <a href="#ab0861b14890aa622b697c12d786ccf07">More...</a><br /></td></tr>
+<tr class="separator:ab0861b14890aa622b697c12d786ccf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5a271cb63e8366c5eb79939d0dac6e88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ShaderLoader::ShaderLoader </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sourceVS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>sourceFS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shader loader. </p>
+<p>Loads in the vertex and fragment shader for use in the game engine. </p>
+<p>Vertex Shader</p>
+<p>Compiles the source vertex shader into the openGL vertex shader.</p>
+<p>Fragment Shader</p>
+<p>Compiles the source vertex shader into the openGL fragment shader.</p>
+<p>glAttachShader</p>
+<p>Attaches the shader to the program handle.</p>
+<p>glLinkProgram</p>
+<p>Links the program handle using openGL link program.</p>
+<p>Delete the shaders</p>
+<p>Now the shaders have been compiled and linked to the program, can now free up the memory used.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0861b14890aa622b697c12d786ccf07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ShaderLoader::~ShaderLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shader Loader Deconstructor. </p>
+<p>Deletes the program and frees up the memory. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2d1ca186f96a158d7a47ad4605d87f4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint ShaderLoader::getProgramHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getProgramHandle </p>
+<p>Returns the program handle </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/<a class="el" href="_shader_loader_8h_source.html">ShaderLoader.h</a></li>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/ShaderLoader.cpp</li>
@@ -106,7 +186,7 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getProgramHandle</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 16 2015 11:33:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 17 2015 14:22:55 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

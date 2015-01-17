@@ -93,19 +93,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0795197be538c631332c888824ab1bee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0795197be538c631332c888824ab1bee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt; *entityArray)</td></tr>
+<tr class="memitem:a0795197be538c631332c888824ab1bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement_system.html#a0795197be538c631332c888824ab1bee">update</a> (std::vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt; *entityArray)</td></tr>
+<tr class="memdesc:a0795197be538c631332c888824ab1bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Movement class.  <a href="#a0795197be538c631332c888824ab1bee">More...</a><br /></td></tr>
 <tr class="separator:a0795197be538c631332c888824ab1bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c24da715496fbe082e1302091a8cf2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c24da715496fbe082e1302091a8cf2c"></a>
-static <a class="el" href="class_movement_system.html">MovementSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMovementSystem</b> ()</td></tr>
+<tr class="memitem:a9c24da715496fbe082e1302091a8cf2c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_movement_system.html">MovementSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement_system.html#a9c24da715496fbe082e1302091a8cf2c">getMovementSystem</a> ()</td></tr>
+<tr class="memdesc:a9c24da715496fbe082e1302091a8cf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getMovementSystem  <a href="#a9c24da715496fbe082e1302091a8cf2c">More...</a><br /></td></tr>
 <tr class="separator:a9c24da715496fbe082e1302091a8cf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24947d2de2835b087cabad3dce7d431c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24947d2de2835b087cabad3dce7d431c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyMovementSystem</b> ()</td></tr>
+<tr class="memitem:a24947d2de2835b087cabad3dce7d431c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement_system.html#a24947d2de2835b087cabad3dce7d431c">destroyMovementSystem</a> ()</td></tr>
+<tr class="memdesc:a24947d2de2835b087cabad3dce7d431c"><td class="mdescLeft">&#160;</td><td class="mdescRight">destroyMovementSystem  <a href="#a24947d2de2835b087cabad3dce7d431c">More...</a><br /></td></tr>
 <tr class="separator:a24947d2de2835b087cabad3dce7d431c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a24947d2de2835b087cabad3dce7d431c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MovementSystem::destroyMovementSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>destroyMovementSystem </p>
+<p>Gets the movement system and then deletes it and frees up memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c24da715496fbe082e1302091a8cf2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_movement_system.html">MovementSystem</a> &amp; MovementSystem::getMovementSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getMovementSystem </p>
+<p>If there is no movement system, one will be created and returned. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0795197be538c631332c888824ab1bee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MovementSystem::update </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_entity.html">Entity</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>entityArray</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Movement class. </p>
+<p>Uses the transforms returned by the entity to perform player movement. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/<a class="el" href="_movement_system_8h_source.html">MovementSystem.h</a></li>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/MovementSystem.cpp</li>
@@ -113,7 +185,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyMovemen
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 16 2015 11:33:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 17 2015 14:22:55 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

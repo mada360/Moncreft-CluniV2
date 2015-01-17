@@ -104,13 +104,79 @@ GLuint&#160;</td><td class="memItemRight" valign="bottom"><b>getVertexBufferID</
 <tr class="memitem:a176e74c4c585ce8a70cf8f071c1cbba0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176e74c4c585ce8a70cf8f071c1cbba0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VertexBuffer</b> (const GLvoid *data, GLsizeiptr size, GLenum mode, GLsizei count, GLsizei stride, <a class="el" href="class_shader_interface.html">ShaderInterface</a> *shader, <a class="el" href="class_shader_data.html">ShaderData</a> *shaderData, GLvoid *positionOffset, GLvoid *normalOffset)</td></tr>
 <tr class="separator:a176e74c4c585ce8a70cf8f071c1cbba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41eade34b8748926aeda6688fa5f61a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41eade34b8748926aeda6688fa5f61a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>configureVertexAttributes</b> ()</td></tr>
+<tr class="memitem:a5216726fdd43b2ae8e1439e347717fdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vertex_buffer.html#a5216726fdd43b2ae8e1439e347717fdd">~VertexBuffer</a> ()</td></tr>
+<tr class="memdesc:a5216726fdd43b2ae8e1439e347717fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex Buffer destructor.  <a href="#a5216726fdd43b2ae8e1439e347717fdd">More...</a><br /></td></tr>
+<tr class="separator:a5216726fdd43b2ae8e1439e347717fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41eade34b8748926aeda6688fa5f61a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vertex_buffer.html#a41eade34b8748926aeda6688fa5f61a7">configureVertexAttributes</a> ()</td></tr>
+<tr class="memdesc:a41eade34b8748926aeda6688fa5f61a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">configure Vertex Attributes  <a href="#a41eade34b8748926aeda6688fa5f61a7">More...</a><br /></td></tr>
 <tr class="separator:a41eade34b8748926aeda6688fa5f61a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae522778b0808bb41609ab871e594499f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae522778b0808bb41609ab871e594499f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>renderVertexBuffer</b> ()</td></tr>
+<tr class="memitem:ae522778b0808bb41609ab871e594499f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vertex_buffer.html#ae522778b0808bb41609ab871e594499f">renderVertexBuffer</a> ()</td></tr>
+<tr class="memdesc:ae522778b0808bb41609ab871e594499f"><td class="mdescLeft">&#160;</td><td class="mdescRight">render Vertex Buffer  <a href="#ae522778b0808bb41609ab871e594499f">More...</a><br /></td></tr>
 <tr class="separator:ae522778b0808bb41609ab871e594499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5216726fdd43b2ae8e1439e347717fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VertexBuffer::~VertexBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertex Buffer destructor. </p>
+<p>Deletes all vertex buffers and sets the vertexBuffer variable to 0. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a41eade34b8748926aeda6688fa5f61a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VertexBuffer::configureVertexAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configure Vertex Attributes </p>
+<p>When _shader is empty (-1 position) grab a new position vertex and apply this to the vertex attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae522778b0808bb41609ab871e594499f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VertexBuffer::renderVertexBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>render Vertex Buffer </p>
+<p>Calls for the open gl to draw arrays </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Primitve</td><td>render type </td></tr>
+    <tr><td class="paramname">Start</td><td>position (0 start) </td></tr>
+    <tr><td class="paramname">Size</td><td>of array vertices. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/<a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a></li>
 <li>/Users/mada360/Desktop/OpenGLCube/OpenGLCube/VertexBuffer.cpp</li>
@@ -118,7 +184,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>renderVertexBuffer</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 16 2015 11:33:23 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 17 2015 14:22:55 for OpenGL Cube Game by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
