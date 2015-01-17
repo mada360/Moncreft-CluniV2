@@ -21,7 +21,7 @@ On aptitude repository based systems (Ubuntu) please use please use:
 $Sudo apt-get install glew-utils libglew-dev
 ```
 
-On a max system using xcode, the project file should already be good to go, providing you have the libraries installed; please look to the origin sources on installation instructions.
+On a Mac OS X based system using xcode, the project file should already be good to go, providing you have the libraries installed; please look to the origin sources on installation instructions.
 
 ##How to install
 #####Makefile still a work in progress.
