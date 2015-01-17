@@ -4,7 +4,27 @@
 This is a simple project using C++ and openGL, to develop a voxel based game.
 The controls are the basic WASD for movement and mouse controlls for camera; found in 99.9% of FPS Games.
 
+##Prerequisites
+You will need to a have a system with the following installed
+- OpenGL
+- GLFW
+- GLEW
+- C++11 compiler (g++ used)
+
+On a system using the yum repository system (fedora) use:
+```
+$Sudo yum install glew-utils libglew-dev
+```
+
+On aptitude repository based systems (Ubuntu) please use please use:
+```
+$Sudo apt-get install glew-utils libglew-dev
+```
+
+On a max system using xcode, the project file should already be good to go, providing you have the libraries installed; please look to the origin sources on installation instructions.
+
 ##How to install
+#####Makefile still a work in progress.
 
 
 ##Documentation
