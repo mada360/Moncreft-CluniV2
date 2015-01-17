@@ -18,5 +18,5 @@ before_install:
  - make
  - sudo make install
 
-for_install
+for_install:
  - g++ -std=c++11 *.cpp *.h Game -lglfw3 -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread
