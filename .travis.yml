@@ -12,5 +12,12 @@ before_install:
  - sudo apt-get install -q gcc-4.8
  - sudo apt-get install -q g++-4.8
  - sudo apt-get build-dep glfw3
- 
-script: ./configure && make
+ - sudo apt-get install cmake xorg-dev libglu1-mesa-dev
+ - cd glfw-3.0.4
+ - rehash
+ - cmake -G "Unix Makefiles"
+ - make
+ - sudo make install
+
+for_install
+ - g++ -std=c++11 *.cpp *.h Game -lglfw3 -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread
