@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6122427E1A656E0300FF27FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6122427D1A656E0300FF27FD /* main.cpp */; };
+		6122427E1A656E0300FF27FD /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6122427D1A656E0300FF27FD /* Main.cpp */; };
 		612242871A656F9A00FF27FD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612242861A656F9A00FF27FD /* OpenGL.framework */; };
 		61225F331A6766E400C711D2 /* SimpleFPS.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 61225F321A67663200C711D2 /* SimpleFPS.1 */; };
 		616217771A65A0F50039B392 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616217751A65A0F50039B392 /* GameManager.cpp */; };
@@ -52,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		6122427A1A656E0300FF27FD /* OpenGLCube */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLCube; sourceTree = BUILT_PRODUCTS_DIR; };
-		6122427D1A656E0300FF27FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6122427D1A656E0300FF27FD /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		612242861A656F9A00FF27FD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		61225F321A67663200C711D2 /* SimpleFPS.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = SimpleFPS.1; sourceTree = "<group>"; };
 		616217751A65A0F50039B392 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				61225F321A67663200C711D2 /* SimpleFPS.1 */,
-				6122427D1A656E0300FF27FD /* main.cpp */,
+				6122427D1A656E0300FF27FD /* Main.cpp */,
 				616217751A65A0F50039B392 /* GameManager.cpp */,
 				616217761A65A0F50039B392 /* GameManager.h */,
 				61F06F1F1A6734BB00609B34 /* PlayerInputSystem.cpp */,
@@ -304,7 +304,7 @@
 				6162177C1A65BE690039B392 /* RenderSystem.cpp in Sources */,
 				616217821A65D1CF0039B392 /* ShaderLoader.cpp in Sources */,
 				61F06F4E1A673C2700609B34 /* Vector2.cpp in Sources */,
-				6122427E1A656E0300FF27FD /* main.cpp in Sources */,
+				6122427E1A656E0300FF27FD /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
