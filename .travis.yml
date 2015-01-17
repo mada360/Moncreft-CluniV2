@@ -1,7 +1,6 @@
 language: cpp
 compiler:
   - g++
-  - clang
 # Change this to your needs
 
 before_install:
