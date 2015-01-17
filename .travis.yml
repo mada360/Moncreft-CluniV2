@@ -5,7 +5,7 @@ compiler:
 
 before_install:
  - sudo apt-get install g++
- - sudo apt-get build-dep glfw3
+// - sudo apt-get build-dep glfw3
  - sudo apt-get install cmake xorg-dev libglu1-mesa-dev
  - cd glfw-3.0.4
  - rehash
